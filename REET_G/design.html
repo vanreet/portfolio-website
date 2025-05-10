@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Reet Singh</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-[#020c1b] to-[#0a192f]">
+    <!-- Loading Animation -->
+    <div id="loader" class="fixed inset-0 bg-gradient-to-br from-[#020c1b] to-[#0a192f] z-50 flex items-center justify-center">
+        <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-[#64ffda]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-[#020c1b]/80 backdrop-blur-md z-40 transition-all duration-300 border-b border-white/10">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-white hover:text-[#64ffda] transition-colors">Reet Singh</a>
+                <div class="hidden md:flex space-x-8">
+                    <div class="dropdown">
+                        <a href="index.html#portfolio" class="text-gray-300 hover:text-[#64ffda] transition-colors">Portfolio</a>
+                        <div class="dropdown-content">
+                            <a href="design.html" class="dropdown-item">Design</a>
+                            <a href="photography.html" class="dropdown-item">Photography</a>
+                            <a href="videography.html" class="dropdown-item">Videography</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-gray-300 hover:text-[#64ffda] transition-colors">About</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-[#64ffda] transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Design Portfolio Header -->
+    <header class="pt-32 pb-16 bg-gradient-to-br from-[#020c1b] to-[#0a192f]">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4" data-aos="fade-up">Design Portfolio</h1>
+            <p class="text-xl text-[#8892b0] max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+                Exploring the intersection of creativity and functionality through thoughtful design solutions.
+            </p>
+        </div>
+    </header>
+
+    <!-- Design Portfolio Content -->
+    <main class="container mx-auto px-4 py-16">
+        <!-- Filter Buttons -->
+        <div class="container mx-auto px-4 mb-12">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="filter-btn active px-6 py-2 rounded-full">All</button>
+                <button class="filter-btn px-6 py-2 rounded-full">Branding</button>
+                <button class="filter-btn px-6 py-2 rounded-full">UI/UX</button>
+                <button class="filter-btn px-6 py-2 rounded-full">Print</button>
+            </div>
+        </div>
+
+        <!-- Design Projects Grid -->
+        <section class="py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Branding Project -->
+                    <div class="portfolio-card" data-category="branding" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1" alt="Brand Identity Project" class="portfolio-image">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Branding</span>
+                            <h3 class="text-xl font-semibold text-white mb-2">Modern Brand Identity</h3>
+                            <p class="text-[#8892b0] mb-4">Complete brand identity design for a tech startup</p>
+                            <button class="btn-primary px-4 py-2 rounded-lg">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Project -->
+                    <div class="portfolio-card" data-category="ui-ux" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698" alt="UI/UX Design Project" class="portfolio-image">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">UI/UX</span>
+                            <h3 class="text-xl font-semibold text-white mb-2">Mobile App Design</h3>
+                            <p class="text-[#8892b0] mb-4">User interface design for a fitness tracking app</p>
+                            <button class="btn-primary px-4 py-2 rounded-lg">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Print Design Project -->
+                    <div class="portfolio-card" data-category="print" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1583241475880-683c2e2f4744" alt="Print Design Project" class="portfolio-image">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Print</span>
+                            <h3 class="text-xl font-semibold text-white mb-2">Magazine Layout</h3>
+                            <p class="text-[#8892b0] mb-4">Editorial design for a lifestyle magazine</p>
+                            <button class="btn-primary px-4 py-2 rounded-lg">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Web Design Project -->
+                    <div class="portfolio-card" data-category="web" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" alt="Web Design Project" class="portfolio-image">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Web Design</span>
+                            <h3 class="text-xl font-semibold text-white mb-2">E-commerce Platform</h3>
+                            <p class="text-[#8892b0] mb-4">Modern e-commerce website design and development</p>
+                            <button class="btn-primary px-4 py-2 rounded-lg">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Packaging Design -->
+                    <div class="portfolio-card" data-category="packaging" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db" alt="Packaging Design" class="portfolio-image">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Packaging</span>
+                            <h3 class="text-xl font-semibold text-white mb-2">Product Packaging</h3>
+                            <p class="text-[#8892b0] mb-4">Sustainable packaging design for organic products</p>
+                            <button class="btn-primary px-4 py-2 rounded-lg">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Motion Graphics -->
+                    <div class="portfolio-card" data-category="motion" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7" alt="Motion Graphics" class="portfolio-image">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Motion</span>
+                            <h3 class="text-xl font-semibold text-white mb-2">Animated Brand Story</h3>
+                            <p class="text-[#8892b0] mb-4">Motion graphics for brand storytelling</p>
+                            <button class="btn-primary px-4 py-2 rounded-lg">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black/90 z-50 hidden">
+        <div class="container mx-auto px-4 py-8 h-full overflow-y-auto">
+            <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg p-8">
+                <button id="close-modal" class="absolute top-4 right-4 text-white text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="" alt="Project Image" class="w-full rounded-lg">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4"></h2>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6"></p>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Project Details</h3>
+                                <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
+                                    <!-- Project details will be dynamically added here -->
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Tools Used</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <!-- Tools will be dynamically added here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#020c1b] py-8 mt-16 border-t border-white/10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#8892b0]">
+                    © 2024 Reet Singh. All rights reserved.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-[#8892b0] hover:text-[#64ffda] transition-colors">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-[#8892b0] hover:text-[#64ffda] transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-[#8892b0] hover:text-[#64ffda] transition-colors">
+                        <i class="fab fa-behance text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

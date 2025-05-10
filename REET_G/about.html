@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Reet Singh</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-[#020c1b] to-[#0a192f]">
+    <!-- Loading Animation -->
+    <div id="loader" class="fixed inset-0 bg-gradient-to-br from-[#020c1b] to-[#0a192f] z-50 flex items-center justify-center">
+        <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-[#64ffda]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-[#020c1b]/80 backdrop-blur-md z-40 transition-all duration-300 border-b border-white/10">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-white hover:text-[#64ffda] transition-colors">Reet Singh</a>
+                <div class="hidden md:flex space-x-8">
+                    <div class="dropdown">
+                        <a href="index.html#portfolio" class="text-gray-300 hover:text-[#64ffda] transition-colors">Portfolio</a>
+                        <div class="dropdown-content">
+                            <a href="design.html" class="dropdown-item">Design</a>
+                            <a href="photography.html" class="dropdown-item">Photography</a>
+                            <a href="videography.html" class="dropdown-item">Videography</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-gray-300 hover:text-[#64ffda] transition-colors">About</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-[#64ffda] transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container mx-auto px-4">
+            <!-- Profile Section -->
+            <div class="profile-section" data-aos="fade-up">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Me</h1>
+                        <p class="text-xl text-[#8892b0] mb-6">
+                            A passionate creative professional with expertise in design, photography, and videography.
+                        </p>
+                        <a href="contact.html" class="btn-primary px-6 py-3 rounded-lg inline-block">Get in Touch</a>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="images/profile.jpg" alt="Reet Singh" class="profile-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Section -->
+            <div class="timeline-section">
+                <h2 class="text-3xl font-bold text-white mb-8" data-aos="fade-up">Professional Journey</h2>
+                <div class="space-y-8">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <h3 class="text-xl font-semibold text-white mb-2">Senior Creative Director</h3>
+                            <p class="text-[#8892b0]">Leading creative direction for major brand campaigns and digital projects.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <h3 class="text-xl font-semibold text-white mb-2">Art Director</h3>
+                            <p class="text-[#8892b0]">Managed visual design and creative strategy for multiple clients.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-date">2019</div>
+                        <div class="timeline-content">
+                            <h3 class="text-xl font-semibold text-white mb-2">Creative Designer</h3>
+                            <p class="text-[#8892b0]">Started career in design with focus on branding and digital media.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h2 class="text-3xl font-bold text-white mb-8" data-aos="fade-up">Skills & Expertise</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3 class="text-xl font-semibold text-white mb-4">Design</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-[#8892b0] mb-1">
+                                    <span>UI/UX Design</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[#8892b0] mb-1">
+                                    <span>Brand Identity</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-xl font-semibold text-white mb-4">Photography</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-[#8892b0] mb-1">
+                                    <span>Portrait</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[#8892b0] mb-1">
+                                    <span>Commercial</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#020c1b] py-8 mt-16 border-t border-white/10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#8892b0]">
+                    © 2024 Reet Singh. All rights reserved.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-[#8892b0] hover:text-[#64ffda] transition-colors">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-[#8892b0] hover:text-[#64ffda] transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-[#8892b0] hover:text-[#64ffda] transition-colors">
+                        <i class="fab fa-behance text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
