@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Reet Singh</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-black to-gray-900">
+    <!-- Loading Animation -->
+    <div id="loader" class="fixed inset-0 bg-black z-50 flex items-center justify-center">
+        <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/80 backdrop-blur-md z-40 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-white">Reet Singh</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <header class="pt-32 pb-16 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6" data-aos="fade-up">
+                My Portfolio
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Explore my creative journey through design, photography, and videography
+            </p>
+        </div>
+    </header>
+
+    <!-- Portfolio Filter -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+            <button class="filter-btn active px-6 py-2 rounded-full bg-white text-black" data-filter="all">
+                All Work
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-gray-900 text-white" data-filter="design">
+                Design
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-gray-900 text-white" data-filter="photography">
+                Photography
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-gray-900 text-white" data-filter="videography">
+                Videography
+            </button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Design Portfolio Items -->
+            <div class="portfolio-item" data-category="design">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60" alt="Brand Identity Design">
+                <div class="overlay">
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Brand Identity</h3>
+                        <a href="design.html" class="btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="design">
+                <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&auto=format&fit=crop&q=60" alt="UI/UX Design">
+                <div class="overlay">
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">UI/UX Design</h3>
+                        <a href="design.html" class="btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photography Portfolio Items -->
+            <div class="portfolio-item" data-category="photography">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=60" alt="Portrait Photography">
+                <div class="overlay">
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Portrait Series</h3>
+                        <a href="photography.html" class="btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="photography">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&auto=format&fit=crop&q=60" alt="Landscape Photography">
+                <div class="overlay">
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Landscape Collection</h3>
+                        <a href="photography.html" class="btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Videography Portfolio Items -->
+            <div class="portfolio-item" data-category="videography">
+                <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&auto=format&fit=crop&q=60" alt="Commercial Video">
+                <div class="overlay">
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Commercial Work</h3>
+                        <a href="videography.html" class="btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="videography">
+                <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?w=800&auto=format&fit=crop&q=60" alt="Documentary Film">
+                <div class="overlay">
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Documentary Series</h3>
+                        <a href="videography.html" class="btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close absolute top-4 right-4 text-white text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300">
+                    © 2024 Reet Singh. All rights reserved.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
